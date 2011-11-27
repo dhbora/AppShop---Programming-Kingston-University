@@ -9,6 +9,8 @@ class app
 {
 private:
     static int numberOfApps;
+
+protected:
 	int population;
 	int id;
 	std::string appName, description;

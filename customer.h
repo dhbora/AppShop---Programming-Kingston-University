@@ -6,7 +6,7 @@
 
 class customer : public user
 {
-private:
+protected:
 	short age;
 
 public:

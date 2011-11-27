@@ -6,8 +6,10 @@
 class user
 {
 private:
+    static int numberOfUsers;
+
+protected:
 	int id;
-	static int numberOfUsers;
 	std::string firstName, surname, profession;//, password;
 	const char *password;   //change to string if possible
 	std::string address1, address2, postcode;
