@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1321584739 source:/home/mateusz/programowanie/Uni testy/academic.cpp
+1322354396 source:/home/mateusz/programowanie/Uni testy/academic.cpp
 	"academic.h"
 
 1321584757 /home/mateusz/programowanie/Uni testy/academic.h
@@ -18,7 +18,7 @@
 1321844622 /home/mateusz/programowanie/Uni testy/admin.h
 	"user.h"
 
-1321844483 source:/home/mateusz/programowanie/Uni testy/customer.cpp
+1322354373 source:/home/mateusz/programowanie/Uni testy/customer.cpp
 	"customer.h"
 
 1321844568 source:/home/mateusz/programowanie/Uni testy/developer.cpp
@@ -47,14 +47,14 @@
 1321584344 /home/mateusz/programowanie/Uni testy/student.h
 	"customer.h"
 
-1321892432 source:/home/mateusz/programowanie/Uni testy/shop.cpp
+1322354593 source:/home/mateusz/programowanie/Uni testy/shop.cpp
 	"shop.h"
 	<cstring>
 
-1321584631 source:/home/mateusz/programowanie/Uni testy/student.cpp
+1322354651 source:/home/mateusz/programowanie/Uni testy/student.cpp
 	"student.h"
 
-1321845205 source:/home/mateusz/programowanie/Uni testy/user.cpp
+1322354273 source:/home/mateusz/programowanie/Uni testy/user.cpp
 	"user.h"
 	<cstring>
 	<string>

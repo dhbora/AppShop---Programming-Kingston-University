@@ -2,8 +2,8 @@
 #include <cstring>
 
 shop::shop()
+:currentUser(NULL)
 {
-    currentUser = NULL;
 }
 
 user* shop::login(const int id, const char *pass)

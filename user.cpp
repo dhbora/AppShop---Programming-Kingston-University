@@ -5,7 +5,7 @@
 int user::numberOfUsers = 0;
 
 user::user(const int ID, const char *fName, const char *sName, const char *adrs1, const char *adrs2, const char *pCode, const char *pass, const char *prof)
-:id(ID), firstName(fName), surname(sName), address1(adrs1), address2(adrs2), postcode(pCode), password(pass), profession(prof)
+:id(ID), firstName(fName), surname(sName), profession(prof), password(pass), address1(adrs1), address2(adrs2), postcode(pCode)
 {
 }
 
