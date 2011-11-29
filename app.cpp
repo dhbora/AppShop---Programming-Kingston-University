@@ -12,8 +12,24 @@ int app::getNextID()
     return ++numberOfApps;
 }
 
+app * app::editName(char * name);
+{
+	appName = name;
+	return this;
+}
+
+app * app::editDescription(char * desc);
+{
+	description = desc;
+	return this;
+}
+
+int getPopulation();
+{
+	return population;
+}
 
 int app::getID()
 {
     return id;
-}
+	}

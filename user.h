@@ -20,7 +20,9 @@ public:
     const char* getProfession();
     static int getNextID();
     int getID();
-
+user * editFirstName(char * fName);
+user * editSurname(char * sName);
+user * editAddress(char * adrs1, char * adrs2, char * pCode);
 
 };
 #endif
