@@ -19,6 +19,9 @@ protected:
 public:
 	app(const int ID, const char *name, const char *desc, user *dev);//change user to developer
 	static int getNextID();
+	app * editName(char * name);
+	app * editDescription(char * desc);
 	int getID();
+	int getPopulation();
 };
 #endif
