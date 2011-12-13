@@ -8,7 +8,6 @@
 #include "academic.h"
 #include "admin.h"
 #include "developer.h"
-#include "student.h"
 
 class shop
 {

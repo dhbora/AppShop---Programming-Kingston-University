@@ -48,8 +48,6 @@
 		<Unit filename="paidApp.h" />
 		<Unit filename="shop.cpp" />
 		<Unit filename="shop.h" />
-		<Unit filename="student.cpp" />
-		<Unit filename="student.h" />
 		<Unit filename="trialApp.cpp" />
 		<Unit filename="trialApp.h" />
 		<Unit filename="user.cpp" />
