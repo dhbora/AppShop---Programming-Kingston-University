@@ -22,3 +22,5 @@ TOMASZ:
 -Approve Application
 
 MATEUSZ:
+
+-saving and retrieving data from files (user list and app list)
