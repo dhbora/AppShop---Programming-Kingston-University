@@ -12,19 +12,19 @@ int app::getNextID()
     return ++numberOfApps;
 }
 
-app * app::editName(char * name);
+app * app::editName(char * name)
 {
 	appName = name;
 	return this;
 }
 
-app * app::editDescription(char * desc);
+app * app::editDescription(char * desc)
 {
 	description = desc;
 	return this;
 }
 
-int getPopulation();
+int app::getPopulation()
 {
 	return population;
 }

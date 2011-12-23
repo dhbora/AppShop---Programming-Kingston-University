@@ -1,5 +1,4 @@
 #include "user.h"
-    #include <cstring>
 #include <string>
 
 int user::numberOfUsers = 0;
@@ -11,16 +10,16 @@ user::user(const int ID, const char *fName, const char *sName, const char *adrs1
 
 bool user::verifyPass(const char *pass)
 {
-    if (!strcmp(pass, password))
+    if (pass == password)
         return true;
     else
         return false;
 
 }
 
-const char* user::getProfession()
+std::string user::getProfession()
 {
-    return profession.c_str();
+    return profession;
 }
 
 int user::getNextID()
@@ -34,13 +33,13 @@ firstName = fName;
 return this;
 }
 
-user * user::editSurname(char * sName);
+user * user::editSurname(char * sName)
 {
-	surname = sName
+	surname = sName;
 		return this;
 }
 
-user * user::editAddress(char * adrs1, char * adrs2, char * pCode);
+user * user::editAddress(char * adrs1, char * adrs2, char * pCode)
 {
 	address1 = adrs1;
 	address2 = adrs2;
@@ -48,7 +47,7 @@ user * user::editAddress(char * adrs1, char * adrs2, char * pCode);
 	return this;
 }
 
-user * user::changePassword(char pass);
+user * user::changePassword(char pass)
 {
 password = pass;
 return this;

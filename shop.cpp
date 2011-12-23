@@ -1,5 +1,4 @@
 #include "shop.h"
-#include <cstring>
 
 shop::shop()
 :currentUser(NULL)
@@ -22,12 +21,12 @@ void shop::logout()
 
 app* shop::uploadApp(const char *name, const char *description, double price, short period) throw (char *)
 {
-    if(!strcmp(currentUser->getProfession(), "developer"))
+    if(currentUser->getProfession() == "developer")
     {
         applicationLst.addApp(name, description, currentUser, price, period);
     }else
     {
-        char *warning = "Only developer can upload apps";
+        const char *warning = "Only developer can upload apps";
         throw warning;
     }
 }
