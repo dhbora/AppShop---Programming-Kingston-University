@@ -19,8 +19,8 @@ CHAMANDEEP:
 
 TOMASZ:
 
--Approve Application
+-GUI
 
 MATEUSZ:
 
--saving and retrieving data from files (user list and app list)
+-Basket class
