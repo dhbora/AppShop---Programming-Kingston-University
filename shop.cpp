@@ -1,4 +1,7 @@
 #include "shop.h"
+#include "app.h"
+#include "trialApp.h"
+#include "paidApp.h"
 
 shop::shop()
 :currentUser(NULL)
@@ -23,7 +26,16 @@ app* shop::uploadApp(const char *name, const char *description, double price, sh
 {
     if(currentUser->getProfession() == "developer")
     {
-        applicationLst.addApp(name, description, currentUser, price, period);
+        if (price == 0)
+        {
+            trialApp *software = new trialApp(app::getNextID(), name, description, currentUser, period);
+            applicationLst.addApp(software);
+        }
+        else
+        {
+            paidApp *software = new paidApp(app::getNextID(), name, description, currentUser, price);
+            applicationLst.addApp(software);
+        }
     }else
     {
         const char *warning = "Only developer can upload apps";
