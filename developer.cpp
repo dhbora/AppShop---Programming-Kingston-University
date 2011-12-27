@@ -4,3 +4,8 @@ developer::developer(const int ID, const char *fName, const char *sName, const c
 :user(ID, fName, sName, adrs1, adrs2, pCode, pass, prof)
 {
 }
+
+basket* developer::getBasket() throw (int)
+{
+    throw (1);
+}

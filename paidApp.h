@@ -9,5 +9,7 @@ private:
 	double price;
 public:
     paidApp(const int ID, const char *name, const char *desc, user *dev, const double prc);
+    void displayData();
+    double getPrice();
 };
 #endif

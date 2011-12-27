@@ -12,3 +12,4 @@ academic::academic(const int ID, const char *fName, const char *sName, const cha
     else
         discount = 0;
 }
+

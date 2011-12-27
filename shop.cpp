@@ -10,11 +10,16 @@ shop::shop()
 
 user* shop::login(const int id, const char *pass)
 {
-    user* usr = usrLst.findUser(id);
-    if(usr->verifyPass(pass))
-        return currentUser = usr;
-    else
-        return currentUser = NULL;
+    try
+    {
+        user* usr = usrLst.findUser(id);
+        if(usr->verifyPass(pass))
+            return currentUser = usr;
+    }catch (int)
+    {
+    }
+
+    return currentUser = NULL;
 }
 
 void shop::logout()
@@ -30,11 +35,13 @@ app* shop::uploadApp(const char *name, const char *description, double price, sh
         {
             trialApp *software = new trialApp(app::getNextID(), name, description, currentUser, period);
             applicationLst.addApp(software);
+            return software;
         }
         else
         {
             paidApp *software = new paidApp(app::getNextID(), name, description, currentUser, price);
             applicationLst.addApp(software);
+            return software;
         }
     }else
     {

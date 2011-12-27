@@ -10,6 +10,8 @@ private:
 
 public:
     trialApp(const int ID, const char *name, const char *desc, user *dev, short period);
+    void displayData();
+    double getPrice();
 
 };
 #endif

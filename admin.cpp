@@ -5,3 +5,8 @@ admin::admin(const int ID, const char *fName, const char *sName, const char *adr
 {
 
 }
+
+basket* admin::getBasket() throw(int)
+{
+    throw (1);
+}

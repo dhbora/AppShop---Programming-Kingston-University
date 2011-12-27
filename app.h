@@ -23,5 +23,7 @@ public:
 	app * editDescription(char * desc);
 	int getID();
 	int getPopulation();
+	virtual void displayData() = 0;
+	virtual double getPrice() = 0;
 };
 #endif

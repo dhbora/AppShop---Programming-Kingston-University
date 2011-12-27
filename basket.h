@@ -2,20 +2,22 @@
 #define BASKET
 
 #include <vector>
+#include "appList.h"
 
 class app;
 
 class basket
 {
 private:
-    std::vector<app*> appList;
+    appList basketList;
     double total;
     short quantity;
 public:
-    app& add(app &application);
-    app& remove(app &application);
-    bool buy();
+    app* add(app *application);
+    bool remove(int id);
+//    bool buy();
     double workoutTotal();
+    void displayContent();
 
 };
 #endif

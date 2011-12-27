@@ -3,6 +3,8 @@
 
 #include <string>
 
+class basket;
+
 class user
 {
 private:
@@ -11,7 +13,6 @@ private:
 protected:
 	int id;
 	std::string firstName, surname, profession, password;
-	//char *password;
 	std::string address1, address2, postcode;
 
 public:
@@ -20,10 +21,11 @@ public:
     std::string getProfession();
     static int getNextID();
     int getID();
+    virtual basket* getBasket() throw (int)= 0;
+    std::string getName();
     user * editFirstName(char * fName);
     user * editSurname(char * sName);
     user * editAddress(char * adrs1, char * adrs2, char * pCode);
     user * changePassword(char pass);
-
 };
 #endif

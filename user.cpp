@@ -27,6 +27,16 @@ int user::getNextID()
     return ++numberOfUsers;
 }
 
+int user::getID()
+{
+    return id;
+}
+
+std::string user::getName()
+{
+    return (firstName+" "+surname);
+}
+
 user * user::editFirstName(char * fName)
 {
 firstName = fName;
@@ -53,7 +63,3 @@ password = pass;
 return this;
 }
 
-int user::getID()
-{
-    return id;
-}

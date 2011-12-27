@@ -4,3 +4,8 @@ customer::customer(const int ID, const char *fName, const char *sName, const cha
 :user(ID, fName, sName, adrs1, adrs2, pCode, pass, prof), age(years)
 {
 }
+
+basket* customer::getBasket() throw (int)
+{
+    return &bskt;
+}

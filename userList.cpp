@@ -2,6 +2,7 @@
 #include "academic.h"
 #include "admin.h"
 #include "developer.h"
+#include "customer.h"
 #include <cstring>
 
 user* userList::addUser(const char *fName, const char *sName, const char *adrs1, const char *adrs2, const char *pCode, const char *pass, const char *profession, const short age, const short grade)
@@ -21,21 +22,22 @@ user* userList::addUser(const char *fName, const char *sName, const char *adrs1,
         developer *usr = new developer(user::getNextID(), fName, sName, adrs1, adrs2, pCode, pass, profession);
         usrLst.push_back(usr);
         return usr;
-    }
-    /*else
+    }else
     {
-        //throw exception
-    }*/
+        customer *usr = new customer(user::getNextID(), fName, sName, adrs1, adrs2, pCode, pass, profession, age);
+        usrLst.push_back(usr);
+        return usr;
+    }
 
 }
 
-user* userList::findUser(const int id)
+user* userList::findUser(const int id) throw (int)
 {
     for (int i = 0; (int) usrLst.size(); i++)
     {
         if(usrLst[i]->getID() == id)
             return usrLst[i];
     }
-    //throw exception
 
+    throw (1);
 }
