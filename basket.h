@@ -15,7 +15,6 @@ private:
 public:
     app* add(app *application);
     bool remove(int id);
-//    bool buy();
     double workoutTotal();
     void displayContent();
 

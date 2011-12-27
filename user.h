@@ -4,6 +4,7 @@
 #include <string>
 
 class basket;
+class orderList;
 
 class user
 {
@@ -22,6 +23,7 @@ public:
     static int getNextID();
     int getID();
     virtual basket* getBasket() throw (int)= 0;
+    virtual orderList* getOrderList() throw (int)= 0;
     std::string getName();
     user * editFirstName(char * fName);
     user * editSurname(char * sName);

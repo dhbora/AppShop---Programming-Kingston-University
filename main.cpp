@@ -38,6 +38,19 @@ int main(int argc, char *argv[])
         cout << "This user does not have a basket";
     }
 
+    try
+    {
+        myShop.getCurrentUser()->getOrderList()->addToList(myShop.getCurrentUser()->getBasket());
+        myShop.getCurrentUser()->getBasket()->add(myShop.getAppList()->getAppById(3));
+        myShop.getCurrentUser()->getOrderList()->addToList(myShop.getCurrentUser()->getBasket());
+        myShop.getCurrentUser()->getBasket()->remove(1);
+        myShop.getCurrentUser()->getOrderList()->addToList(myShop.getCurrentUser()->getBasket());
+        myShop.getCurrentUser()->getOrderList()->displayHistory();
+    }catch (int)
+    {
+        cout << "This user does not have order list";
+    }
+
     myShop.logout();
     return 0;
 }

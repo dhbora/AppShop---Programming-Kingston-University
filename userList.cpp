@@ -33,7 +33,7 @@ user* userList::addUser(const char *fName, const char *sName, const char *adrs1,
 
 user* userList::findUser(const int id) throw (int)
 {
-    for (int i = 0; (int) usrLst.size(); i++)
+    for (int i = 0; i < (int) usrLst.size(); i++)
     {
         if(usrLst[i]->getID() == id)
             return usrLst[i];

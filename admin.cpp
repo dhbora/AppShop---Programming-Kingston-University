@@ -10,3 +10,8 @@ basket* admin::getBasket() throw(int)
 {
     throw (1);
 }
+
+orderList* admin::getOrderList() throw (int)
+{
+    throw (1);
+}

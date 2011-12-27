@@ -23,7 +23,7 @@ bool appList::removeApp(int id)
 
 app* appList::getAppById(const int id) throw (int)
 {
-    for (int i = 0; (int) appLst.size(); i++)
+    for (int i = 0; i < (int) appLst.size(); i++)
     {
         if(appLst[i]->getID() == id)
             return appLst[i];
@@ -40,7 +40,7 @@ app* appList::getAppByPosition(const unsigned int pos) throw (int)
 
 int appList::getAppPosition(const int id) throw (int)
 {
-    for (int i = 0; (int) appLst.size(); i++)
+    for (int i = 0; i < (int) appLst.size(); i++)
     {
         if(appLst[i]->getID() == id)
             return i;

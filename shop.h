@@ -14,7 +14,7 @@ class shop
 private:
     appList applicationLst;
 	userList usrLst;
-	user *currentUser;   //currently logged in user         //change for smart pointer
+	user *currentUser;   //currently logged in user
 
 public:
     shop();

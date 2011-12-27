@@ -9,3 +9,8 @@ basket* customer::getBasket() throw (int)
 {
     return &bskt;
 }
+
+orderList* customer::getOrderList() throw (int)
+{
+    return &ordrLst;
+}

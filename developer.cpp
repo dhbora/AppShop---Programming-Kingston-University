@@ -9,3 +9,8 @@ basket* developer::getBasket() throw (int)
 {
     throw (1);
 }
+
+orderList* developer::getOrderList() throw (int)
+{
+    throw (1);
+}

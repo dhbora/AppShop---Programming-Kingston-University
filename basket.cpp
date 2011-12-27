@@ -16,10 +16,6 @@ bool basket::remove(int id)
     return false;
 
 }
-/*bool basket::buy()
-{
-    //proceed to order class
-}*/
 
 double basket::workoutTotal()
 {
