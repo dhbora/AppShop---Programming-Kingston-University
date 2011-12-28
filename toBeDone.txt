@@ -1,0 +1,7 @@
+- To add, edit, list, search and delete Apps
+- Return the total number of Apps purchased
+- Store number of Apps that each costumer has used (free and purchased)
+- To add,edit,list, search and delete costumers
+- Return total number of costumers
+- Calculate the price per App depending on the type of costumer that purchases ( older than 25 and working at uni should get 10%), good student(younger than 25 and grade bigger than 7 should get 25%discount).
+- Provide simple interface menu to deal with normal costumers, academics, students and Apps.
