@@ -8,10 +8,14 @@ admin::admin(const int ID, const char *fName, const char *sName, const char *adr
 
 basket* admin::getBasket() throw(int)
 {
-    throw (1);
+    throw (1);		//admin doesn't have a basket
 }
 
 orderList* admin::getOrderList() throw (int)
 {
-    throw (1);
+    throw (1);		//admin doesn't have an orderList
+}
+
+admin::~admin()
+{
 }

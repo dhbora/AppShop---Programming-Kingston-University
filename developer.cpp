@@ -7,10 +7,14 @@ developer::developer(const int ID, const char *fName, const char *sName, const c
 
 basket* developer::getBasket() throw (int)
 {
-    throw (1);
+    throw (1);		//developer doesn't have a basket
 }
 
 orderList* developer::getOrderList() throw (int)
 {
-    throw (1);
+    throw (1);		//developer doesn't have an order list
+}
+
+developer::~developer()
+{
 }

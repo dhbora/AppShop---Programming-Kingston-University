@@ -24,7 +24,7 @@ public:
     userList* getUserList();
     appList* getAppList();
     user* getCurrentUser();
-    ~shop(); //for *currentUser
+    ~shop();
 };
 
 #endif

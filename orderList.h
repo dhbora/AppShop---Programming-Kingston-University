@@ -9,7 +9,7 @@ class orderList
 {
     private:
 
-        class order
+        class order		//order class that will be user only within orderList
         {
             private:
                 int id;
@@ -18,18 +18,18 @@ class orderList
 
             public:
                 order(int ID, basket *bskt);
-                void displayOrder();
+                void displayOrder();		//display single order details
         };
 
         std::vector<order*> orderLst;
-        int numberOfPurchases;
+        int numberOfPurchases;		//how many purchases has the user made
 
-        int getNextId();
+        int getNextId();		//it's a method
 
 	public:
         orderList();
         basket* addToList(basket *bskt);
-        void displayHistory();
+        void displayHistory();		//display all items from the order list
 
 };
 #endif

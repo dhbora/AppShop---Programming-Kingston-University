@@ -2,28 +2,33 @@
 #include "app.h"
 
 
-app* basket::add(app *application)
+basket* basket::add(app *application)
 {
     basketList.addApp(application);
-    return application;
+    return this;
 }
 
 bool basket::remove(int id)
 {
     if(!basketList.removeApp(id))
-        return true;
+        return true;		//if removing suceeded return true
 
-    return false;
+    return false;			//otherwise return false
 
+}
+
+void basket::increasePopularity()
+{
+	for(int i = 0; i < basketList.numberOfApps(); i++)
+		basketList.getAppByPosition(i)->increasePopularity();
 }
 
 double basket::workoutTotal()
 {
     double total = 0.0;
     for(int i = 0; i < basketList.numberOfApps(); i++)
-    {
-        total += basketList.getAppByPosition(i)->getPrice();
-    }
+        total += basketList.getAppByPosition(i)->getPrice();		//go throgh all apps from the basket and add their prices to total
+
     return total;
 
 }

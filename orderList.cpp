@@ -20,21 +20,22 @@ void orderList::order::displayOrder()
 {
     struct tm *tme = localtime(&datetime);
     char buffer[40];
-    strftime(buffer, 40, "%x at %X", tme);
+    strftime(buffer, 40, "%x at %X", tme);		//display date and time in the format MM/DD/YY at HH:MM:SS
     std::cout << "Order number: " << id << " purchased on: " << buffer << " consists of:" << std::endl;
     basketPurchased.displayContent();
 }
 
 basket* orderList::addToList(basket *bskt)
 {
-    orderLst.push_back(new order(getNextId(), bskt));
-    numberOfPurchases++;
+    orderLst.push_back(new order(getNextId(), bskt));		//add basket's content to the order list
+    bskt->increasePopularity();
+    numberOfPurchases++;		//increase number of purchases
     return bskt;
 }
 
 void orderList::displayHistory()
 {
-    for(unsigned int i = 0; i < orderLst.size(); i++)
+    for(unsigned int i = 0; i < orderLst.size(); i++)		//go through the order list and display its content
     {
         orderLst[i]->displayOrder();
     }

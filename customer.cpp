@@ -14,3 +14,7 @@ orderList* customer::getOrderList() throw (int)
 {
     return &ordrLst;
 }
+
+customer::~customer()
+{
+}

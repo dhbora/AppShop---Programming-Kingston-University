@@ -13,8 +13,8 @@ private:
 
 protected:
 	int id;
-	std::string firstName, surname, profession, password;
-	std::string address1, address2, postcode;
+	std::string firstName, surname, profession, password,
+				address1, address2, postcode;
 
 public:
     user(const int ID, const char *fName, const char *sName, const char *adrs1, const char *adrs2, const char *pCode, const char *pass, const char *prof);
@@ -29,5 +29,8 @@ public:
     user * editSurname(char * sName);
     user * editAddress(char * adrs1, char * adrs2, char * pCode);
     user * changePassword(char pass);
+    static int increaseNumberOfUsers();
+    virtual ~user();
+
 };
 #endif

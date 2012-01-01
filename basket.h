@@ -11,12 +11,12 @@ class basket
 private:
     appList basketList;
     double total;
-    short quantity;
 public:
-    app* add(app *application);
+    basket* add(app *application);
     bool remove(int id);
+    void increasePopularity();	//increase popularity of each app
     double workoutTotal();
-    void displayContent();
+    void displayContent();		//display all details of all items from the basket
 
 };
 #endif

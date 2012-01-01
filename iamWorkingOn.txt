@@ -20,6 +20,8 @@ ALREADY FINISHED/ALMOST FINISHED:
 
 CHAMANDEEP:
 
+- have been Woring on the discount rates in basket class.
+
 TOMASZ:
 
 -GUI
