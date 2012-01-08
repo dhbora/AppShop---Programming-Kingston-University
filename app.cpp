@@ -1,4 +1,5 @@
 #include "app.h"
+#include <string>
 
 int app::numberOfApps = 0;		//initializing static variable
 
@@ -12,13 +13,13 @@ int app::getNextID()
     return numberOfApps + 1;
 }
 
-app * app::editName(char * name)
+app * app::editName(const char * name)
 {
 	appName = name;
 	return this;
 }
 
-app * app::editDescription(char * desc)
+app * app::editDescription(const char * desc)
 {
 	description = desc;
 	return this;
@@ -27,6 +28,11 @@ app * app::editDescription(char * desc)
 int app::getPopularity()
 {
 	return popularity;
+}
+
+const std::string app::getName()
+{
+	return appName;
 }
 
 int app::increasePopularity()

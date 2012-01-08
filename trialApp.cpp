@@ -7,7 +7,7 @@ trialApp::trialApp(const int ID, const char *name, const char *desc, user *dev, 
 {
 }
 
-void trialApp::displayData()
+void trialApp::displayData(float discount)
 {
     std::cout << "Trial App ID = " << id << "\n\tapp name: " << appName << "\n\t" << description << "\n\tnumber of downloads: " << popularity << "\n\tdeveloped by: " << devel->getName() << "\n\ttrial period: " << trialPeriod << std::endl << std::endl;
 }

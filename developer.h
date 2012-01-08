@@ -12,6 +12,8 @@ public:
     app* uploadApp(const char *name, const char *description, double price = 0, short period = 0);
     basket* getBasket() throw(int);		//throws an exception
     orderList* getOrderList() throw (int);		//throws an exception
+    void displayDetails();
+    float getDiscount();
     virtual ~developer();
 };
 #endif

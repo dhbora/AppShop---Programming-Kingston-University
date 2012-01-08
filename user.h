@@ -24,12 +24,14 @@ public:
     int getID();
     virtual basket* getBasket() throw (int)= 0;
     virtual orderList* getOrderList() throw (int)= 0;
-    std::string getName();
-    user * editFirstName(char * fName);
-    user * editSurname(char * sName);
-    user * editAddress(char * adrs1, char * adrs2, char * pCode);
-    user * changePassword(char pass);
+    const std::string getName();
+    user * editFirstName(const char * fName);
+    user * editSurname(const char * sName);
+    user * editAddress(const char * adrs1, const char * adrs2, const char * pCode);
+    user * changePassword(const char *pass);
     static int increaseNumberOfUsers();
+    virtual void displayDetails() = 0;
+    virtual float getDiscount() = 0;
     virtual ~user();
 
 };

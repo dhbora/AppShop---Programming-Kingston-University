@@ -9,7 +9,7 @@ private:
 	double price;
 public:
     paidApp(const int ID, const char *name, const char *desc, user *dev, const double prc);
-    void displayData();
+    void displayData(float discount = 0.0);
     double getPrice();
     virtual ~paidApp();
 };

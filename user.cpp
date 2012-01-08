@@ -32,24 +32,24 @@ int user::getID()
     return id;
 }
 
-std::string user::getName()
+const std::string user::getName()
 {
     return (firstName+" "+surname);		//combine first name with last name and return
 }
 
-user * user::editFirstName(char * fName)
+user * user::editFirstName(const char * fName)
 {
 firstName = fName;
 return this;
 }
 
-user * user::editSurname(char * sName)
+user * user::editSurname(const char * sName)
 {
 	surname = sName;
 		return this;
 }
 
-user * user::editAddress(char * adrs1, char * adrs2, char * pCode)
+user * user::editAddress(const char * adrs1, const char * adrs2, const char * pCode)
 {
 	address1 = adrs1;
 	address2 = adrs2;
@@ -57,7 +57,7 @@ user * user::editAddress(char * adrs1, char * adrs2, char * pCode)
 	return this;
 }
 
-user * user::changePassword(char pass)
+user * user::changePassword(const char *pass)
 {
 password = pass;
 return this;
